@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimalist E-Commerce</title>
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+  
+  
+  <!-- Header -->
+ <header class="header">
+  <div class="logo-container">
+    <img src="logo.png" alt="OBM Systems Ltd. Logo" class="logo-img">
+
+    <div class="logo-text">
+      <h1 class="logo">OBM Systems Ltd.</h1>
+      
+    </div>
+  </div>
+
+ <nav class="nav-menu">
+  <a href="index.html">Home</a>
+  <a href="Service.html">Service</a>
+  <a href="contact.html">Contact</a>
+  
+</nav>
+
+</header>
+
+<div class="main-content">
+<!-- Hero Image Section -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="welcome-panel">
+      <div class="welcome-text">
+        <h1>Welcome!</h1>
+        <p>If you don’t see the item you’re looking for, contact us for a quote. 
+           We’ll check availability with our international warehouse suppliers.</p>
+        <a href="#shop" class="hero-btn">SHOP</a>
+      </div>
+      <div class="welcome-banner" role="img" aria-label="Welcome banner"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Navigation -->
+  <div class="slider-nav">
+    <button id="prevBtn">&#10094;</button>
+    <span id="pageIndicator">1 / 2</span>
+    <button id="nextBtn">&#10095;</button>
+  </div>
+</div>
+
+
+<!-- Product Slider -->
+<div class="slider-container" id="shop">
+  <div class="slider" id="productSlider">
+    <!-- Products will be injected here by script.js -->
+  </div>
+</div>
+
+<div class="promo-container">
+  <h1>Apple products <br> Now Available</h1>
+  <img src="MAC.jpeg" alt="">
+</div>
+
+
+
+
+
+<!-- Brand Slider Section -->
+<div class="brand-slider">
+  <div class="slide-track">
+    <div class="slide"><img src="LOGO LAYOUT.png" alt="Dell"></div>
+    <div class="slide"><img src="LOGO LAYOUT 002.png" alt="HP"></div>
+    <div class="slide"><img src="LOGO LAYOUT007.png" alt="Lenovo"></div>
+    <div class="slide"><img src="LOGO LAYOUT008.png" alt="ASUS"></div>
+    <div class="slide"><img src="LOGO LAYOUT006.png" alt="Acer"></div>
+    <div class="slide"><img src="LOGO LAYOUT003.png" alt="MSI"></div>
+    <div class="slide"><img src="LOGO LAYOUT005.png" alt="Apple"></div>
+    <div class="slide"><img src="LOGO LAYOUT 001.png" alt="Logitech"></div>
+    <div class="slide"><img src="LOGO LAYOUT004.png" alt="Kingston"></div>
+  </div>
+</div>
+
+<style>
+.brand-slider {
+  overflow: hidden;
+  background: #fff;
+  padding: 20px 0;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(250px * 18); /* number of slides * width */
+  animation: scroll 40s linear infinite;
+}
+
+.slide {
+  width: 250px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide img {
+  max-width: 100px;
+  max-height: 40px;
+  object-fit: contain;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-250px * 9)); }
+}
+</style>
+</div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 OBM Systems Ltd. All rights reserved.</p>
+  </footer>
+
+ <script src="script.js"></script>
+
+</body>
+</html>
