@@ -295,12 +295,19 @@ body {
   height: auto;
   border-radius: 12px;
   object-fit: contain;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  box-shadow: none;
 }
 
 .contact-inline-img {
   margin-top: 1rem;
-  max-width: 240px;
+  margin-left: -3rem;
+  margin-right: -1.25rem;
+  margin-bottom: -1.25rem;
+  width: calc(100% + 4.25rem);
+  max-width: none !important;
+  height: 140px;
+  object-fit: cover;
+  display: block;
 }
 
 .image-placeholder {
@@ -486,6 +493,7 @@ body {
   border-radius: 10px;
   padding: 1.25rem;
   background-color: #fbfbfb;
+  overflow: hidden;
 }
 
 .contact-info p {
